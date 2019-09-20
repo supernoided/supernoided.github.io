@@ -628,6 +628,8 @@ body {
   border-radius: 2.13em;
   background-color: #5E42B0;
   cursor: pointer;
+  padding-top: 0.77em;
+  padding-bottom: 0.77em;
 }
 
 .button:hover {
@@ -641,12 +643,10 @@ body {
 
 .button__text {
   display: block;
-  padding-left: 1.85em;
+  margin-left: 1.85em;
   text-align: left;
-  padding-top: 1em;
-  padding-bottom: 1em;
   font-size: 0.777em;
-  line-height: 1.1;
+  line-height: 1.15;
   letter-spacing: 0.05em;
   color: #ffffff;
 }
