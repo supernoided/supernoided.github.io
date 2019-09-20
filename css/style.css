@@ -104,6 +104,10 @@
     padding-left: 52%;
   }
   
+  .feature__number {
+    font-size: 1em;
+  }
+  
   .motivation__container {
     width: 50%;
     padding-top: 13.28%;
@@ -144,6 +148,10 @@
     padding-bottom: 2.7%;
   }
   
+  .footer__title__sub {
+    font-size: 1.66em;
+  }
+  
   .button__footer {
     margin-top: 7.81%;
   }
@@ -158,9 +166,13 @@
   .button,
   .label,
   .section__features,
-  .article__motivation,
-  .footer {
+  .article__motivation {
     font-size: 18px;
+  }
+  
+  .feature,
+  .footer {
+    font-size: 16px;
   }
   
   .logo {
@@ -199,20 +211,35 @@
     position: absolute;
   }
   
+  .athletes__preview {
+    max-width: 50%;
+    top: 15%;
+    left: -14.5%;
+  }
+  
+  .players__preview {
+    width: 89%;
+    top: 1%;
+    left: 45%;
+  }
+  
+  .article__container {
+    padding-top: 7.94%;
+  }
+  
   .article__title {
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 4.68%;
-    margin-bottom: 1.45%;
+    margin-bottom: 0.5%;
   }
 
   .article__title__right {
-    padding-left: 38%;
+    padding-left: 37.8%;
   }
   
   .feature {
-    padding-top: 2.6%;
-    padding-bottom: 2.91%;
+    padding-top: 4.06%;
+    padding-bottom: 4.06%;
   }
   
   .feature__header {
@@ -222,29 +249,21 @@
   }
   
   .feature__header__right {
-    padding-left: 38%;
+    padding-left: 37.8%;
   }
   
   .feature__text {
     width: 57%;
     padding-left: 5%;
-    margin-top: 0.93%;
+    margin-top: 2.63%;
   }
   
   .feature__text__right {
-    padding-left: 38%;
+    padding-left: 37.8%;
   }
   
-  .athletes__preview {
-    max-width: 57%;
-    top: 3%;
-    left: -22%;
-  }
-  
-  .players__preview {
-    width: 89%;
-    top: 1%;
-    left: 45%;
+  .feature__number {
+    font-size: 1em;
   }
   
   .article__motivation {
@@ -262,9 +281,9 @@
   }
   
   .motivation__number {
-    top: 55%;
+    top: 53%;
     left: 5%;
-    padding: 4% 5%;
+    padding: 5.15% 5.6%;
   }
   
   .motivation__title {
@@ -288,8 +307,8 @@
   }
   
   .footer {
-    padding-top: 11.92%;
-    padding-bottom: 2.7%;
+    padding-top: 16.4%;
+    padding-bottom: 3.12%;
   }
   
   .footer__header {
@@ -301,12 +320,16 @@
     text-align: center;
   }
   
+  .footer__title__sub {
+    font-size: 2em;
+  }
+  
   .button__footer {
-    margin-top: 20%;
+    margin-top: 36.1%;
   }
 
   .logo__footer {
-    margin-top: 9%;
+    margin-top: 7.16%;
   }
 }
 
@@ -317,7 +340,7 @@
   .section__features,
   .article__motivation,
   .footer {
-    font-size: 12px;
+    font-size: 14px;
   }
   
   .logo {
@@ -325,16 +348,16 @@
   }
   
   .header__top {
-    padding: 2.34% 5% 25% 5%;
+    padding: 10.31% 6% 26.25% 6%;
   }
   
   .header__top__title {
-    font-size: 3.55em;
+    font-size: 2em;
     margin-top: 21.09%;
   }
     
   .button__container {
-    margin-top: 38.54%;
+    margin-top: 22.55%;
     flex-direction: column;
     align-items: center;
   }
@@ -351,10 +374,13 @@
     margin-top: 2.1em;
   }
   
-  .article__title {
-    padding-left: 5%;
-    padding-right: 5%;
+  .article__container {
     padding-top: 4.68%;
+  }
+  
+  .article__title {
+    padding-left: 6.4%;
+    padding-right: 6.4%;
     margin-bottom: 1.45%;
   }
   
@@ -404,7 +430,7 @@
   .motivation__number {
     top: 55%;
     left: 5%;
-    padding: 4% 5%;
+    padding: 6.43% 5.85%;
   }
   
   .motivation__title {
@@ -439,6 +465,10 @@
   .footer__title__container {
     margin-top: 9%;
     text-align: center;
+  }
+  
+  .footer__title__sub {
+    font-size: 1em;
   }
   
   .button__footer {
@@ -666,7 +696,6 @@ body {
 }
 
 .feature__number {
-  font-size: 1em;
   color: #000000;
 }
 
@@ -713,8 +742,6 @@ body {
 .article__motivation:nth-child(even) {
   flex-direction: row-reverse;
 }
-
-
 
 .image {
   object-fit: cover;
@@ -791,7 +818,6 @@ body {
 .footer__title__sub {
   padding-left: 1.36em;
   margin-top: 0.46em;
-  font-size: 1.66em;
   line-height: 1.16;
   color: #A496CA;
 }
