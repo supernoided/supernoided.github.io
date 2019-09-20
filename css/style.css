@@ -1,0 +1,797 @@
+@font-face {
+  font-family: opensans-regular;
+  src: url("https://supernoided.github.io/fonts/OpenSans-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: opensans-bold;
+    src: url("https://supernoided.github.io/fonts/OpenSans-Bold.ttf");
+  font-weight: 700;
+}
+
+@media (min-width: 961px) and (max-width: 1920px) {
+  .header__top,
+  .button,
+  .label,
+  .section__features,
+  .article__motivation,
+  .footer {
+    font-size: 18px;
+  }
+  
+  .logo {
+    width: 10.61em;
+  }
+  
+  .header__top {
+    padding: 5.2% 8.68% 11.84% 8.68%;
+  }
+
+  .header__top__title {
+    font-size: 5em;
+    margin-top: 33.46%;
+  }
+    
+  .button__container {
+  margin-top: 38.41%;
+  }
+  
+  .label:nth-child(odd) {
+    margin-right: 1.38em;
+  }
+
+  .label:nth-child(even) {
+    margin-left: 1.38em;
+  }
+  
+  .button {
+    width: 17.22em;
+    height: 4.27em;
+    border: 0;
+  }
+  
+  .athletes__preview,
+  .players__preview {
+    position: absolute;
+  }
+  
+  .article__title {
+    padding-left: 9.63%;
+    padding-right: 9.63%;
+    padding-top: 4.68%;
+    margin-bottom: 1.45%;
+  }
+
+  .article__title__right {
+    padding-left: 52%;
+  }
+  
+  .athletes__preview {
+    width: 30%;
+    top: 3%;
+    left: 20%;
+  }
+  
+  .players__preview {
+    max-width: 50%;
+    top: 1.5%;
+    left: 42%;
+  }
+  
+  .feature {
+    padding-top: 2.6%;
+    padding-bottom: 2.91%;
+  }
+  
+  .feature__header {
+    width: 40.68%;
+    padding-left: 9.63%;
+    padding-right: 7.32%;
+  }
+  
+  .feature__header__right {
+    padding-left: 52%;
+  }
+  
+  .feature__text {
+    width: 40.68%;
+    padding-left: 9.63%;
+    margin-top: 0.93%;
+  }
+  
+  .feature__text__right {
+    padding-left: 52%;
+  }
+  
+  .motivation__container {
+    width: 50%;
+    padding-top: 13.28%;
+  }
+  
+  .motivation__preview {
+    max-width: 50%;
+  }
+  
+  .motivation__number {
+    top: 32.96%;
+    left: 45.5%;
+    padding: 2.96% 3.64%;
+  }
+  
+  .motivation__title {
+    padding-left: 12.81%;
+    padding-right: 19.27%;
+  }
+  
+  .motivation__text {
+    margin-top: 4.27%;
+    padding-left: 13.33%;
+    padding-right: 19.27%;
+  }
+  
+  .article__motivation:nth-child(even) .motivation__title {
+    padding-left: 19.56%;
+  }
+
+  .article__motivation:nth-child(even) .motivation__text {
+    padding-left: 19.27%;
+    padding-right: 13.33%;
+  }
+  
+  .footer {
+    padding-top: 11.92%;
+    padding-bottom: 2.7%;
+  }
+  
+  .button__footer {
+    margin-top: 7.81%;
+  }
+
+  .logo__footer {
+    margin-top: 13.64%;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .header__top,
+  .button,
+  .label,
+  .section__features,
+  .article__motivation,
+  .footer {
+    font-size: 18px;
+  }
+  
+  .logo {
+    width: 11.38em;
+  }
+  
+  .header__top {
+    padding: 2.34% 9.89% 5.72% 9.89%;
+  }
+  
+  .header__top__title {
+    font-size: 3.55em;
+    margin-top: 21.09%;
+  }
+    
+  .button__container {
+    margin-top: 38.54%;
+  }
+  
+  .label:nth-child(odd) {
+    margin-right: 0.86em;
+  }
+
+  .label:nth-child(even) {
+    margin-left: 0.86em;
+  }
+  
+  .button {
+    width: 17.22em;
+    height: 4.27em;
+    border: 0;
+  }
+  
+  .athletes__preview,
+  .players__preview {
+    position: absolute;
+  }
+  
+  .article__title {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 4.68%;
+    margin-bottom: 1.45%;
+  }
+
+  .article__title__right {
+    padding-left: 38%;
+  }
+  
+  .feature {
+    padding-top: 2.6%;
+    padding-bottom: 2.91%;
+  }
+  
+  .feature__header {
+    width: 57%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .feature__header__right {
+    padding-left: 38%;
+  }
+  
+  .feature__text {
+    width: 57%;
+    padding-left: 5%;
+    margin-top: 0.93%;
+  }
+  
+  .feature__text__right {
+    padding-left: 38%;
+  }
+  
+  .athletes__preview {
+    max-width: 57%;
+    top: 3%;
+    left: -22%;
+  }
+  
+  .players__preview {
+    width: 89%;
+    top: 1%;
+    left: 45%;
+  }
+  
+  .article__motivation {
+    flex-wrap: wrap;
+  }
+  
+  .motivation__container {
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 12%;
+  }
+  
+  .motivation__preview {
+    width: 100%;
+  }
+  
+  .motivation__number {
+    top: 55%;
+    left: 5%;
+    padding: 4% 5%;
+  }
+  
+  .motivation__title {
+    padding-left: 5%;
+    padding-right: 10%;
+  }
+  
+  .motivation__text {
+    margin-top: 4.27%;
+    padding-left: 5.5%;
+    padding-right: 10%;
+  }
+  
+  .article__motivation:nth-child(even) .motivation__title {
+    padding-left: 19.56%;
+  }
+
+  .article__motivation:nth-child(even) .motivation__text {
+    padding-left: 19.27%;
+    padding-right: 13.33%;
+  }
+  
+  .footer {
+    padding-top: 11.92%;
+    padding-bottom: 2.7%;
+  }
+  
+  .footer__header {
+    flex-direction: column;
+  }
+  
+  .footer__title__container {
+    margin-top: 9%;
+    text-align: center;
+  }
+  
+  .button__footer {
+    margin-top: 20%;
+  }
+
+  .logo__footer {
+    margin-top: 9%;
+  }
+}
+
+@media (max-width: 640px) {
+  .header__top,
+  .button,
+  .label,
+  .section__features,
+  .article__motivation,
+  .footer {
+    font-size: 12px;
+  }
+  
+  .logo {
+    width: 11.38em;
+  }
+  
+  .header__top {
+    padding: 2.34% 5% 25% 5%;
+  }
+  
+  .header__top__title {
+    font-size: 3.55em;
+    margin-top: 21.09%;
+  }
+    
+  .button__container {
+    margin-top: 38.54%;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .label {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .button {
+    width: 35em;
+    height: 4.27em;
+    border: 0;
+    margin-top: 2.1em;
+  }
+  
+  .article__title {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 4.68%;
+    margin-bottom: 1.45%;
+  }
+  
+  .feature {
+    padding-top: 2.6%;
+    padding-bottom: 2.91%;
+  }
+  
+  .feature__header {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .feature__text {
+    width: 90%;
+    padding-left: 5%;
+    margin-top: 0.93%;
+  }
+  
+  .athletes__preview {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .players__preview {
+    width: 89%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .article__motivation {
+    flex-wrap: wrap;
+  }
+  
+  .motivation__container {
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 12%;
+  }
+  
+  .motivation__preview {
+    width: 100%;
+  }
+  
+  .motivation__number {
+    top: 55%;
+    left: 5%;
+    padding: 4% 5%;
+  }
+  
+  .motivation__title {
+    padding-left: 5%;
+    padding-right: 10%;
+  }
+  
+  .motivation__text {
+    margin-top: 4.27%;
+    padding-left: 5.5%;
+    padding-right: 10%;
+  }
+  
+  .article__motivation:nth-child(even) .motivation__title {
+    padding-left: 19.56%;
+  }
+
+  .article__motivation:nth-child(even) .motivation__text {
+    padding-left: 19.27%;
+    padding-right: 13.33%;
+  }
+  
+  .footer {
+    padding-top: 11.92%;
+    padding-bottom: 2.7%;
+  }
+  
+  .footer__header {
+    flex-direction: column;
+  }
+  
+  .footer__title__container {
+    margin-top: 9%;
+    text-align: center;
+  }
+  
+  .button__footer {
+    margin-top: 20%;
+  }
+
+  .logo__footer {
+    margin-top: 9%;
+  }
+}
+
+h1,
+h2,
+h3,
+body,
+label,
+p,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: opensans-regular, sans-serif;
+  min-width: 360px;
+}
+
+.header__top,
+.page,
+.footer {
+  box-sizing: border-box;
+}
+
+.header__top,
+.logo,
+.header__top__title,
+.button__container,
+.article__features,
+.feature,
+.article__motivation,
+.motivation__preview,
+.footer,
+.footer__header {
+  position: relative
+}
+
+.logo,
+.header__top__title,
+.button__container,
+.athletes__preview,
+.players__preview,
+.motivation__number,
+.footer__header {
+  z-index: 1;
+}
+
+.header__top,
+.article__title,
+.feature__title,
+.motivation__title,
+.footer__title__top,
+.footer__title__sub,
+.button__text {
+  text-transform: uppercase;
+}
+
+.header__top {
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-image: url("https://supernoided.github.io/img/football_1280.jpg");
+  background-size: cover;
+}
+
+.header__top,
+.header__top::before,
+.footer,
+.footer::before {
+  background-color: #0A0E34;
+}
+
+.header__top::before,
+.text__hidden,
+.motivation__number,
+.footer::before {
+  position: absolute;
+}
+
+.header__top::before,
+.footer::before {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+}
+
+.logo,
+.button__container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  fill: #ffffff;
+  cursor: pointer;
+}
+
+.header__top__title,
+.article__title,
+.feature__title,
+.feature__number,
+.button__text__storename,
+.motivation__number,
+.motivation__title,
+.footer__title__top {
+  font-family: opensans-bold;
+}
+
+.header__top__title {
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.title__top__1 {
+  text-align: left;
+}
+
+.title__top__2 {
+  text-align: right;
+}
+
+.button__container,
+.button,
+.section__features,
+.feature__header,
+.article__motivation,
+.footer__header {
+  display: flex;
+}
+
+.button__container,
+.button,
+.footer__header {
+  justify-content: center;
+}
+
+.button,
+.footer__header {
+  align-items: center;
+}
+
+.button {
+  border: 0;
+  border-radius: 2.13em;
+  background-color: #5E42B0;
+  cursor: pointer;
+}
+
+.button:hover {
+  border: 2px solid #9173E6;
+}
+
+.button:focus {
+  background-color: #7F6DB3;
+  border-color: #7F6DB3;
+}
+
+.button__text {
+  display: block;
+  padding-left: 1.85em;
+  text-align: left;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 0.777em;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.logo__store {
+  width: 2.66em;
+  height: 3em;
+  fill: #ffffff;
+}
+
+.text__hidden {
+  content: "";
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+}
+
+.section__features {
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.article__title {
+  font-size: 4.44em;
+  color: #E7E7E7;
+}
+
+.feature:nth-child(3n+2) {
+  background-color: #F5F4FB;
+}
+
+.feature:nth-child(3n+3) {
+  background-color: #0A0E34;
+  color: #ffffff;
+}
+
+.feature__right:nth-child(3n+3) {
+  background-color: #5E42B0;
+}
+
+.feature__title {
+  color: #C1C1C1;
+  font-size: 2em;
+  line-height: 0.97;
+  letter-spacing: 0.05em;
+  padding-left: 0.27em;
+}
+
+.feature__number {
+  font-size: 1em;
+  color: #000000;
+}
+
+.feature__number::after {
+  content: "";
+  display: block;
+  width: 1.16em;
+  height: 0.27em;
+  margin-top: 0.16em;
+  border-radius: 0.16em;
+  background-color: #5E42B0;
+}
+
+.feature__right:nth-child(3n+3) .feature__number::after {
+  background-color: #EFEFEF;
+}
+
+.feature__left:nth-child(3n+3) .feature__number::after {
+  background-color: #ffffff;
+}
+
+.feature__left:nth-child(3n+3)  .feature__number {
+  color: #9173E6;
+}
+
+.feature__text {
+  font-size: 1.11em;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+}
+
+.features__list {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.section__motivation {
+  display:flex;
+  flex-direction: column; 
+}
+
+.article__motivation:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+
+
+.image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.motivation__number {
+  display: block;
+  text-align: center;
+  font-size: 1.33em;
+  color: #ffffff;
+  background-color: #5E42B0;
+}
+
+.motivation__number::after {
+  content: "";
+  display: block;
+  width: 1.125em;
+  height: 0.2em;
+  margin-top: 0.12em;
+  border-radius: 0.12em;
+  background-color: #8F7BC8;
+}
+
+.motivation__container {
+  display: block;
+}
+
+.motivation__title {
+  color: #E6E6E6;
+  font-size: 4.44em;
+  line-height: 0.75;
+}
+
+.motivation__text {
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+}
+
+.footer {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("https://supernoided.github.io/img/game_1920.jpg");
+  background-size: cover;
+}
+
+.icon__download {
+  padding-top: 1.38em;
+  padding-bottom: 1.38em;
+  border-radius: 1.66em;
+  background: linear-gradient(0deg, #50329C, #7751DB);
+}
+
+.logo__img {
+  width: 7.22em;
+  height: 4.72em;
+  fill: #ffffff;
+}
+
+.footer__title__container {
+  display: block;
+}
+
+.footer__title__top {
+  padding-left: 0.46em;
+  font-size: 4.44em;
+  line-height: 0.75;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.footer__title__sub {
+  padding-left: 1.36em;
+  margin-top: 0.46em;
+  font-size: 1.66em;
+  line-height: 1.16;
+  color: #A496CA;
+}
