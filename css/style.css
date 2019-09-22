@@ -30,11 +30,17 @@
 
   .header__top__title {
     font-size: 90px;
+    line-height: 1;
     margin-top: 16.6%;
   }
     
   .button__container {
     margin-top: 12.38%;
+  }
+  
+  .logo__store {
+  width: 36px;
+  height: 42px;
   }
   
   .button__text {
@@ -51,7 +57,7 @@
   
   .button {
     width: 17.22em;
-    height: 4.27em;
+    height: 77px;
     border: 0;
     justify-content: center;
   }
@@ -61,16 +67,24 @@
     position: absolute;
   }
   
+  .article__features:nth-child(odd) .article__title {
+    padding-left: 52%;
+  }
+  
+  .article__features:nth-child(odd)  .feature__header {
+    padding-left: 51%;
+  }
+  
+  .article__features:nth-child(odd) .feature__text {
+    padding-left: 51%;
+  }
+  
   .article__title {
     font-size: 80px;
     padding-left: 9.63%;
     padding-right: 9.63%;
     padding-top: 4.68%;
     margin-bottom: 1.45%;
-  }
-
-  .article__title__right {
-    padding-left: 52%;
   }
   
   .athletes__preview {
@@ -88,40 +102,32 @@
   .feature {
     padding-top: 2.6%;
     padding-bottom: 2.91%;
+    padding-left: 9.6%;
+    padding-right: 6%;
   }
   
   .feature__header {
-    width: 40.68%;
-    padding-left: 9.63%;
-    padding-right: 7.32%;
+    width: 43%;
   }
   
   .feature__title {
     font-size: 32px;
   }
   
-  .feature__header__right {
-    padding-left: 52%;
-  }
-  
   .feature__text {
     font-size: 20px;
-    width: 40.68%;
-    padding-left: 9.63%;
+    width: 43%;
     margin-top: 0.93%;
   }
   
-  .feature__text__right {
-    padding-left: 52%;
-  }
-  
   .feature__number {
-    font-size: 1em;
+    font-size: 18px;
   }
   
   .motivation__container {
     width: 50%;
     padding-top: 13.28%;
+    padding-bottom: 11%;
   }
   
   .motivation__preview {
@@ -130,13 +136,13 @@
   
   .motivation__number {
     font-size: 24px;
-    top: 32.96%;
-    left: 45.5%;
-    padding: 2.96% 3.64%;
+    top: 30%;
+    left: 93%;
+    padding: 4% 5%;
   }
   
   .motivation__title {
-    font-size: 80px;
+    font-size: 4.16vw;
     padding-left: 12.81%;
     padding-right: 19.27%;
   }
@@ -149,6 +155,7 @@
   }
   
   .article__motivation:nth-child(even) .motivation__title {
+    padding-right: 15.33%;
     padding-left: 19.56%;
   }
 
@@ -157,27 +164,33 @@
     padding-right: 13.33%;
   }
   
+  .article__motivation:nth-child(even) .motivation__number {
+    left: -7%;
+  }
+  
   .footer {
-    padding-top: 11.92%;
-    padding-bottom: 2.7%;
+    padding: 11.92% 8.68% 2.7% 8.68%;
   }
   
   .footer__title__top {
     font-size: 80px;
+    padding-left: 0.46em;
   }
   
   .footer__title__sub {
     font-size: 30px;
+    padding-left: 1.36em;
+    margin-top: 0.6em;
   }
   
   .button__footer {
-    margin-top: 7.81%;
+    margin-top: 10.7%;
   }
 
   .logo__footer {
-    margin-top: 13.64%;
+    margin-top: 18.5%;
   }
-}
+c}
 
 @media (min-width: 641px) and (max-width: 960px) {
   .header__top,
@@ -198,11 +211,12 @@
   }
   
   .header__top {
-    padding: 2.34% 9.89% 5.72% 9.89%;
+    padding: 2.34% 9.4% 13.46% 9.4%;
   }
   
   .header__top__title {
     font-size: 64px;
+    line-height: 1.18;
     margin-top: 21.09%;
   }
   
@@ -211,7 +225,17 @@
   }
     
   .button__container {
+    width: 100%;
     margin-top: 38.54%;
+  }
+  
+  .logo__store {
+    width: 36px;
+    height: 42px;
+  }
+  
+  .label {
+    width: 47.5%;
   }
   
   .label:nth-child(odd) {
@@ -223,7 +247,7 @@
   }
   
   .button {
-    width: 17.22em;
+    width: 100%;
     height: 4.27em;
     border: 0;
     justify-content: center;
@@ -246,6 +270,18 @@
     left: 52%;
   }
   
+  .article__features:nth-child(odd) .article__title {
+    padding-left: 38.5%;
+  }
+  
+  .article__features:nth-child(odd)  .feature__header {
+    padding-left: 37.8%;
+  }
+  
+  .article__features:nth-child(odd) .feature__text {
+    padding-left: 37.8%;
+  }
+  
   .article__container {
     padding-top: 7.94%;
   }
@@ -255,10 +291,6 @@
     padding-left: 5%;
     padding-right: 5%;
     margin-bottom: 0.5%;
-  }
-
-  .article__title__right {
-    padding-left: 41%;
   }
   
   .feature {
@@ -272,10 +304,6 @@
     padding-right: 5%;
   }
   
-  .feature__header__right {
-    padding-left: 37.8%;
-  }
-  
   .feature__title {
     font-size: 32px;
   }
@@ -285,10 +313,6 @@
     width: 54%;
     padding-left: 5%;
     margin-top: 2.63%;
-  }
-  
-  .feature__text__right {
-    padding-left: 37.8%;
   }
   
   .feature__number {
@@ -311,9 +335,9 @@
   
   .motivation__number {
     font-size: 24px;
-    top: 53%;
-    left: 5%;
-    padding: 5.15% 5.6%;
+    bottom: -5%;
+    left: 4%;
+    padding: 4% 5%;
   }
   
   .motivation__title {
@@ -324,23 +348,14 @@
   
   .motivation__text {
     font-size: 24px;
-    margin-top: 4.27%;
+    margin-top: 4.5%;
     padding-left: 5.5%;
     padding-right: 10%;
   }
   
-  .article__motivation:nth-child(even) .motivation__title {
-    padding-left: 19.56%;
-  }
-
-  .article__motivation:nth-child(even) .motivation__text {
-    padding-left: 19.27%;
-    padding-right: 13.33%;
-  }
-  
   .footer {
-    padding-top: 16.4%;
-    padding-bottom: 3.12%;
+    padding: 16.4% 1.5% 3.12% 1.5%;
+
   }
   
   .footer__header {
@@ -353,11 +368,17 @@
   }
   
   .footer__title__top {
-    font-size: 80px;
+    font-size: 10.4vw;
   }
     
   .footer__title__sub {
-    font-size: 36px;
+    font-size: 4.69vw;
+    margin-top: 0.8em;
+  }
+  
+  .button__padding {
+    padding-left: 9.4%;
+    padding-right: 9.4%;
   }
   
   .button__footer {
@@ -372,11 +393,14 @@
 @media (max-width: 640px) {
   .header__top,
   .button,
-  .footer,
   .label,
   .section__features,
   .article__motivation {
     font-size: 14px;
+  }
+  
+  .footer__header {
+    font-size: 10px;
   }
   
   .logo {
@@ -388,14 +412,21 @@
   }
   
   .header__top__title {
-    font-size: 28px;
+    font-size: 8.75vw;
+    line-height: 1.2;
     margin-top: 21.09%;
   }
     
   .button__container {
     margin-top: 22.55%;
+    width: 100%;
     flex-direction: column;
     align-items: stretch;
+  }
+  
+  .logo__store {
+    width: 20px;
+    height: 24px;
   }
   
   .label {
@@ -406,14 +437,14 @@
   
   .button {
     width: 100%;
-    height: 4.27em;
+    height: 35px;
     border: 0;
     margin-top: 2.1em;
     padding-left: 30%;
   }
   
   .button__text {
-    font-size: 8px;
+    font-size: 2.1vw;
   }
   
   .article__container {
@@ -477,9 +508,9 @@
   
   .motivation__number {
     font-size: 14px;
-    top: 55%;
-    left: 5%;
-    padding: 6.43% 5.85%;
+    bottom: -5%;
+    left: 4%;
+    padding: 4% 5%;
   }
   
   .motivation__title {
@@ -495,17 +526,8 @@
     padding-right: 10%;
   }
   
-  .article__motivation:nth-child(even) .motivation__title {
-    padding-left: 19.56%;
-  }
-
-  .article__motivation:nth-child(even) .motivation__text {
-    padding-left: 19.27%;
-    padding-right: 13.33%;
-  }
-  
   .footer {
-    padding: 11.92% 6% 2.7% 6%;
+    padding: 30.8% 6% 2.7% 6%;
     padding-bottom: 2.7%;
   }
   
@@ -514,16 +536,17 @@
   }
   
   .footer__title__container {
-    margin-top: 9%;
+    margin-top: 168;
     text-align: center;
   }
   
   .footer__title__top {
-    font-size: 32px;
+    font-size: 9vw;
   }
   
   .footer__title__sub {
-    font-size: 14px;
+    font-size: 4.4vw;
+    margin-top: 1em;
   }
   
   .button__footer {
@@ -531,7 +554,7 @@
   }
 
   .logo__footer {
-    margin-top: 9%;
+    margin-top: 25.6%;
   }
 }
 
@@ -548,7 +571,7 @@ img {
 
 body {
   font-family: opensans-regular, sans-serif;
-  min-width: 360px;
+  min-width: 320px;
 }
 
 .header__top,
@@ -591,6 +614,7 @@ body {
 }
 
 .header__top {
+  flex-direction: column;
   color: #ffffff;
   background-repeat: no-repeat;
   background-position: top center;
@@ -629,8 +653,11 @@ body {
 }
 
 .logo {
-  fill: #ffffff;
   cursor: pointer;
+}
+
+.svg {
+  fill: #ffffff;
 }
 
 .header__top__title,
@@ -645,19 +672,16 @@ body {
 }
 
 .header__top__title {
-  line-height: 1;
+  display: block;
   letter-spacing: 0.05em;
   text-align: left;
 }
 
-.title__top__1 {
-  text-align: left;
+.title__top2 {
+  float: right;
 }
 
-.title__top__2 {
-  text-align: right;
-}
-
+.header__top,
 .button__container,
 .button,
 .section__features,
@@ -682,8 +706,6 @@ body {
   border-radius: 2.13em;
   background-color: #5E42B0;
   cursor: pointer;
-  padding-top: 0.77em;
-  padding-bottom: 0.77em;
 }
 
 .button:hover {
@@ -696,7 +718,6 @@ body {
 }
 
 .button__text {
-  display: block;
   margin-left: 1.85em;
   text-align: left;
   line-height: 1.25;
@@ -705,8 +726,6 @@ body {
 }
 
 .logo__store {
-  width: 2.66em;
-  height: 3em;
   fill: #ffffff;
 }
 
@@ -817,7 +836,8 @@ body {
 }
 
 .motivation__container {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .motivation__title {
@@ -855,15 +875,12 @@ body {
 }
 
 .footer__title__top {
-  padding-left: 0.46em;
   line-height: 0.75;
   letter-spacing: 0.05em;
   color: #ffffff;
 }
 
 .footer__title__sub {
-  padding-left: 1.36em;
-  margin-top: 0.6em;
   line-height: 1.16;
   color: #A496CA;
 }
