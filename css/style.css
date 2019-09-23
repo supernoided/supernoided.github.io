@@ -94,7 +94,7 @@
   }
   
   .players__preview {
-    max-width: 51%;
+    max-width: 49%;
     top: 3%;
     left: 46%;
   }
@@ -810,6 +810,7 @@ body {
 .section__motivation {
   display:flex;
   flex-direction: column; 
+  max-width: 1920px;
 }
 
 .article__motivation:nth-child(even) {
