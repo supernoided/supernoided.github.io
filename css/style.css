@@ -650,7 +650,8 @@ body {
 }
 
 .logo,
-.button__container {
+.button__container,
+.section__motivation {
   margin-left: auto;
   margin-right: auto;
 }
