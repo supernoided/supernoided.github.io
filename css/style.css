@@ -678,6 +678,7 @@ body {
 }
 
 .title__top2 {
+  text-align: right;
   float: right;
 }
 
