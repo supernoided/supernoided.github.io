@@ -25,6 +25,7 @@
   }
   
   .header__top {
+    background-image: url("https://supernoided.github.io/img/football_1920.jpg");
     padding: 2.8% 8.68% 6.91% 8.68%;
   }
 
@@ -79,11 +80,14 @@
     padding-left: 51%;
   }
   
+  .article__container {
+    padding-top: 4.68%;
+  }
+  
   .article__title {
     font-size: 80px;
     padding-left: 9.63%;
     padding-right: 9.63%;
-    padding-top: 4.68%;
     margin-bottom: 1.45%;
   }
   
@@ -94,7 +98,7 @@
   }
   
   .players__preview {
-    max-width: 49%;
+    max-width: 51%;
     top: 3%;
     left: 46%;
   }
@@ -169,6 +173,7 @@
   }
   
   .footer {
+    background-image: url("https://supernoided.github.io/img/game_1920.jpg");
     padding: 11.92% 8.68% 2.7% 8.68%;
   }
   
@@ -211,6 +216,7 @@ c}
   }
   
   .header__top {
+    background-image: url("https://supernoided.github.io/img/football_1280.jpg");
     padding: 2.34% 9.4% 13.46% 9.4%;
   }
   
@@ -354,8 +360,8 @@ c}
   }
   
   .footer {
+    background-image: url("https://supernoided.github.io/img/game_1280.jpg");
     padding: 16.4% 1.5% 3.12% 1.5%;
-
   }
   
   .footer__header {
@@ -408,6 +414,7 @@ c}
   }
   
   .header__top {
+    background-image: url("https://supernoided.github.io/img/football_767.jpg");
     padding: 10.31% 6% 26.25% 6%;
   }
   
@@ -530,8 +537,8 @@ c}
   }
   
   .footer {
+    background-image: url("https://supernoided.github.io/img/game_767.jpg");
     padding: 30.8% 6% 2.7% 6%;
-    padding-bottom: 2.7%;
   }
   
   .footer__header {
@@ -621,7 +628,6 @@ body {
   color: #ffffff;
   background-repeat: no-repeat;
   background-position: top center;
-  background-image: url("https://supernoided.github.io/img/football_1280.jpg");
   background-size: cover;
 }
 
@@ -767,7 +773,7 @@ body {
   color: #C1C1C1;
   line-height: 0.97;
   letter-spacing: 0.05em;
-  padding-left: 0.27em;
+  margin-left: 0.27em;
 }
 
 .feature__number {
@@ -859,7 +865,6 @@ body {
 .footer {
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("https://supernoided.github.io/img/game_1920.jpg");
   background-size: cover;
 }
 
