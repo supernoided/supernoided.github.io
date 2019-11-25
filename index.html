@@ -1,284 +1,332 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script type="text/javascript" src="https://supernoided.github.io/js/jquery.min.js"></script>
+  <script type="text/javascript" src="https://supernoided.github.io/js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="https://supernoided.github.io/js/script.js"></script>
   <link href="https://supernoided.github.io/css/style.css" rel="stylesheet">
+  <link href="https://supernoided.github.io/css/owl.carousel.min.css" rel="stylesheet">
 </head>	
 <body>
 <header class="header__top">
-  <div class="logo">
-    <a class="logo__link" href="https://supernoided.github.io/">
-      <span class="text__hidden">to main page</span>
-      <svg class="svg" viewBox="0 0 972 264" xmlns="http://www.w3.org/2000/svg">
-        <g fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M115.5 36.848v190.304L253.03 132 115.5 36.848zM282.112 142.28l-172 119c-8.29 5.736-19.612-.198-19.612-10.28V13c0-10.082 11.321-16.016 19.612-10.28l172 119c7.184 4.97 7.184 15.59 0 20.56z"/>
-          <path d="M42.5 107h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zm0 70h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zM8 143h168a8 8 0 1 0 0-16H8a8 8 0 1 0 0 16z"/>
-          <path d="M356.505 184.362c-7.63 0-14.335-.772-20.117-2.316-5.782-1.544-10.202-3.436-13.26-5.676-3.057-2.24-4.586-4.36-4.586-6.357 0-1.575.59-3.512 1.77-5.813 1.182-2.3 2.59-4.283 4.224-5.95 1.635-1.664 2.997-2.496 4.087-2.496.666 0 2.09.575 4.27 1.725 3.268 1.695 6.37 3.057 9.308 4.086 2.937 1.03 6.313 1.544 10.127 1.544 4.238 0 7.826-.832 10.762-2.497 2.936-1.665 4.404-4.587 4.404-8.764 0-2.423-.757-4.512-2.27-6.268-1.514-1.756-3.452-3.24-5.813-4.45-2.36-1.21-5.57-2.634-9.626-4.27l-7.175-3.087c-4.36-2.12-8.1-4.45-11.217-6.993-3.118-2.543-5.66-5.903-7.63-10.08-1.967-4.18-2.95-9.295-2.95-15.35 0-7.386 1.816-13.532 5.45-18.436 3.632-4.904 8.354-8.507 14.167-10.808 5.812-2.3 12.048-3.45 18.71-3.45 5.448 0 10.382.56 14.802 1.68 4.42 1.12 7.887 2.557 10.4 4.313 2.512 1.757 3.768 3.513 3.768 5.27 0 1.452-.47 3.314-1.407 5.584-.94 2.27-2.104 4.254-3.497 5.95-1.393 1.694-2.694 2.542-3.905 2.542-.544 0-1.513-.303-2.905-.908a51.939 51.939 0 0 0-6.767-2.225c-2.27-.575-5.04-.863-8.31-.863-5.63 0-9.536.893-11.715 2.68-2.18 1.785-3.27 3.89-3.27 6.31 0 2.786.742 5.117 2.225 6.994 1.484 1.877 3.36 3.42 5.63 4.632 2.27 1.21 5.435 2.604 9.492 4.178 6.115 2.603 11.11 5.07 14.985 7.402 3.875 2.33 7.22 5.676 10.036 10.035 2.816 4.36 4.224 9.93 4.224 16.712 0 8.295-1.74 15.092-5.222 20.39-3.482 5.297-7.962 9.127-13.442 11.488-5.48 2.362-11.398 3.542-17.755 3.542h-.002zm96.724 0c-9.81 0-18.21-1.544-25.204-4.632-6.993-3.087-12.337-7.553-16.03-13.396-3.693-5.842-5.54-12.88-5.54-21.115V74.832c0-1.756.787-3.073 2.36-3.95 1.576-.88 4.028-1.318 7.358-1.318h5.45c3.33 0 5.766.44 7.31 1.317 1.544.878 2.316 2.195 2.316 3.95v68.752c0 3.754.923 7.114 2.77 10.08 1.847 2.968 4.435 5.284 7.765 6.95 3.33 1.664 7.145 2.496 11.444 2.496 4.297 0 8.127-.832 11.487-2.497 3.36-1.665 5.98-3.98 7.856-6.948 1.877-2.967 2.816-6.327 2.816-10.08V74.832c0-1.756.77-3.073 2.315-3.95 1.544-.88 3.98-1.318 7.31-1.318h5.36c3.33 0 5.766.44 7.31 1.317 1.544.878 2.316 2.195 2.316 3.95v70.387c0 8.233-1.846 15.272-5.54 21.114-3.692 5.843-9.036 10.31-16.03 13.396-6.992 3.088-15.393 4.632-25.2 4.632l.001.002zm78.376-1.09c-6.478 0-9.717-1.695-9.717-5.085V76.377c0-2.24.513-3.86 1.543-4.86 1.03-.998 2.664-1.497 4.904-1.497h31.515c26.76 0 40.142 10.08 40.142 30.243 0 6.115-1.71 11.382-5.13 15.802-3.422 4.42-8.01 7.72-13.76 9.9v.636c1.998.848 4.102 2.665 6.312 5.45s3.98 5.933 5.313 9.445l14.257 35.51c.485 1.454.727 2.483.727 3.09 0 2.118-3.21 3.177-9.627 3.177h-6.63c-5.39 0-8.507-1.12-9.354-3.36l-12.806-31.515c-1.21-2.42-2.377-4.298-3.497-5.63-1.12-1.332-2.68-2.347-4.677-3.043-1.998-.696-4.692-1.044-8.083-1.044h-6.267v39.507c0 3.39-3.24 5.085-9.717 5.085h-5.45l.002-.001zm30.425-66.026c2.18 0 4.24-.62 6.177-1.862 1.938-1.24 3.48-2.92 4.632-5.04 1.15-2.12 1.724-4.45 1.724-6.993 0-3.753-1.226-6.735-3.678-8.945s-5.767-3.315-9.945-3.315h-14.167v26.156h15.258l-.001-.001zm68.116 66.026c-6.478 0-9.717-1.695-9.717-5.085V76.377c0-2.24.513-3.86 1.543-4.86 1.03-.998 2.664-1.497 4.904-1.497h53.947c1.696 0 2.922.635 3.678 1.907.757 1.27 1.136 3.33 1.136 6.176v4.904c0 2.846-.38 4.904-1.136 6.176-.756 1.27-1.982 1.907-3.678 1.907h-35.51v23.613h34.33c1.695 0 2.936.636 3.723 1.907.787 1.272 1.18 3.3 1.18 6.085v4.995c0 2.846-.393 4.92-1.18 6.222-.787 1.3-2.028 1.952-3.723 1.952h-34.33v42.323c0 3.39-3.24 5.085-9.718 5.085h-5.45.001zm70.205 0c-6.6 0-9.9-1.18-9.9-3.542 0-.666.213-1.634.637-2.906l35.6-103.807c.85-2.3 3.907-3.452 9.174-3.452h8.357c5.267 0 8.325 1.15 9.173 3.452l35.6 103.807c.304 1.21.455 2.18.455 2.906 0 1.21-.65 2.104-1.952 2.68-1.302.575-3.346.862-6.13.862h-7.085c-2.543 0-4.586-.257-6.13-.772-1.544-.514-2.498-1.377-2.86-2.588l-6.54-19.708h-38.054l-6.54 19.708c-.665 2.24-3.147 3.36-7.446 3.36h-6.359zm51.496-44.41l-9.173-28.7c-.545-1.453-1.014-3.118-1.408-4.995a182.088 182.088 0 0 1-1.044-5.358h-.635l-.363 1.997c-.606 3.572-1.302 6.357-2.09 8.355l-9.535 28.7h24.25l-.002.001zm97.995 45.5c-18.163 0-31.56-4.722-40.187-14.168-8.628-9.445-12.942-24.127-12.942-44.048 0-38.326 17.983-57.49 53.948-57.49 4.905 0 9.99.486 15.258 1.454 5.268.97 9.672 2.316 13.214 4.042 3.542 1.725 5.313 3.648 5.313 5.767 0 1.513-.605 3.496-1.816 5.948-1.21 2.452-2.65 4.616-4.314 6.493-1.665 1.878-3.133 2.817-4.405 2.817-.303 0-1.12-.303-2.452-.908a67.092 67.092 0 0 0-9.127-3.044c-3.18-.817-7.222-1.226-12.126-1.226-9.506 0-16.544 3.012-21.116 9.037-4.57 6.024-6.857 15.12-6.857 27.29s2.302 21.344 6.904 27.52c4.6 6.175 11.504 9.263 20.707 9.263 4.784 0 8.947-.484 12.49-1.453 3.54-.97 7.007-2.21 10.398-3.723.18-.06.726-.288 1.634-.682.91-.393 1.575-.59 1.998-.59 1.575 0 3.088.923 4.54 2.77 1.454 1.847 2.635 3.936 3.543 6.267.91 2.33 1.363 4.01 1.363 5.04 0 2.966-1.983 5.48-5.95 7.537-3.965 2.06-8.748 3.588-14.35 4.587-5.6 1-10.82 1.498-15.665 1.498l-.003.002zM907.06 183c-2.24 0-3.875-.515-4.905-1.544-1.03-1.03-1.544-2.664-1.544-4.904V76.377c0-2.24.514-3.86 1.543-4.86 1.03-.998 2.664-1.497 4.905-1.497h59.124c1.695 0 2.92.635 3.678 1.907.757 1.27 1.135 3.33 1.135 6.176v4.904c0 2.846-.378 4.904-1.135 6.176-.757 1.27-1.983 1.907-3.678 1.907h-40.688v23.43h36.328c1.696 0 2.922.637 3.678 1.91.757 1.27 1.136 3.33 1.136 6.174v4.996c0 2.845-.38 4.904-1.136 6.175-.756 1.272-1.982 1.908-3.678 1.908h-36.328v26.156h40.778c1.696 0 2.922.635 3.68 1.906.756 1.272 1.134 3.3 1.134 6.085v5.087c0 2.846-.378 4.904-1.135 6.176-.756 1.27-1.982 1.907-3.678 1.907H907.06z" fill-rule="nonzero"/>
-        </g>
+  <div class="logo__fixed">
+    <svg viewBox="0 0 134 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="60.0241" cy="67.4316" r="45.1786" stroke="#F5F5F5"/>
+<path d="M22.052 16.9235C22.052 16.9235 60.8046 145.91 69.5642 64.4357C78.3239 -17.0388 69.3857 122.793 117.076 111.948" stroke="#F5F5F5" stroke-width="2"/>
     </svg>
-    </a>    
   </div>
-  <h1 class="header__top__title">
-    Be recruited
-    <span class="title__top2">play college sports</span>
-  </h1>
-  <div class="button__container">
-    <label class="label">
-      <span class="text__hidden">Download on the AppStore</span>
-      <button class="button">
-        <svg class="logo__store" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170">
-          <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.197-2.12-9.973-3.17-14.34-3.17-4.58 0-9.492 1.05-14.746 3.17-5.262 2.13-9.5 3.24-12.742 3.35-4.93.21-9.842-1.96-14.746-6.52-3.13-2.73-7.045-7.41-11.735-14.04-5.03-7.08-9.168-15.29-12.41-24.65-3.47-10.11-5.21-19.9-5.21-29.378 0-10.857 2.346-20.22 7.045-28.068C27.508 57.03 32.42 52.06 38.57 48.41s12.793-5.51 19.948-5.63c3.915 0 9.05 1.21 15.43 3.59 6.36 2.39 10.446 3.6 12.237 3.6 1.34 0 5.877-1.416 13.57-4.24 7.275-2.617 13.415-3.7 18.445-3.274 13.63 1.1 23.87 6.473 30.68 16.153-12.19 7.385-18.22 17.73-18.1 31 .11 10.338 3.86 18.94 11.23 25.77 3.34 3.17 7.07 5.62 11.22 7.36-.9 2.61-1.85 5.11-2.86 7.51zM119.11 7.24c0 8.102-2.96 15.667-8.86 22.67-7.12 8.323-15.732 13.133-25.07 12.374-.12-.972-.19-1.995-.19-3.07 0-7.778 3.387-16.102 9.4-22.908 3.002-3.446 6.82-6.31 11.45-8.597 4.62-2.253 8.99-3.498 13.1-3.71.12 1.082.17 2.165.17 3.24z"/>
-        </svg>
-        <div class="button__text">
-          <p>Download on the</p>
-          <p class="button__text__storename">App Store</p>
-        </div>
-      </button>
-    </label>
-    <label class="label">
-      <span class="text__hidden">Download on the Google Play</span>
-      <button class="button">
-        <svg class="logo__store" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 505.499 505.499">
-  <path d="M471.497 234.466l-92.082-53.135-75.733 73.208 69.215 66.907 98.6-56.91c5.43-3.133 8.677-8.756 8.677-15.03 0-6.275-3.245-11.898-8.677-15.04zM363.785 172.3l-101.332-58.497L40.375 0l250.828 242.47M44.063 505.5l218.77-120.512 94.435-54.515-66.065-63.87M25.56 9.815l-.236 489.67L278.72 254.534"/>
-</svg>
-        <div class="button__text">
-          <p>Get it on</p>
-          <p class="button__text__storename">Google Play</p>
-        </div>
-      </button>
-    </label>
+  <div class="start__fixed">
+    <div class="start__left">
+    <a class="link logo__link" href="">
+      <div class="logo">
+        <svg viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="26.5487" cy="29.6832" r="18.8256" stroke="#353535"/>
+<path d="M10.4835 8.31379C10.4835 8.31379 26.8788 62.8851 30.5848 28.4151C34.2908 -6.05486 30.5093 53.1046 50.6862 48.5165" stroke="#353535" stroke-width="2"/>
+      </svg>
+      </div>
+      <span class="text__hidden">to main page</span>
+      <span class="logo__text">UTH x HEDI SLIMANE</span>
+    </a>
+    <h1 class="title__top">Rebirth</h1>
+    <h2 class="title__sub">spring/summer 2020</h2>
+  </div>
+    <div class="start__right">
+    <picture>
+      <source
+        srcset="https://supernoided.github.io/img/start.png" media="(min-width: 601px)"
+        srcset="https://supernoided.github.io/img/start__mob.png" media="(max-width: 600px)">
+      <img src="https://supernoided.github.io/img/start.png"
+        class="start__image"
+        alt="picture__front">
+      </picture>
+  </div>
   </div>
 </header>
 <main class="page">
-  <section class="section__features">
-    <article class="article__features">
-      <div class="article__container">
-        <h2 class="article__title">Athlets</h2>
-        <div class="athletes__preview">
-          <picture>
-            <source
-              srcset="https://raw.githubusercontent.com/supernoided/projectS/master/img/footballer_566.png" media="(min-width: 961px)"
-              srcset="https://raw.githubusercontent.com/supernoided/projectS/master/img/footballer_497.png" media="(min-width: 641px) and (max-width: 960px)"
-              srcset="https://raw.githubusercontent.com/supernoided/projectS/master/img/footballer_192.png" media="(max-width: 640px)">
-            <img class="image" src="https://raw.githubusercontent.com/supernoided/projectS/master/img/footballer_566.png" alt="footballer">
-          </picture>
-        </div>
-        <ul class="features__list">
-          <li class="feature">
-            <header class="feature__header">
-              <span class="feature__number">01</span>
-              <h3 class="feature__title">Connection</h3>
-            </header>
-            <div class="feature__text">
-              <p class="feature__text__par">
-                Connect with coaches directly, you can ping coaches to view profile.
-              </p>
-            </div>
-          </li>
-          <li class="feature">
-            <header class="feature__header">
-              <span class="feature__number">02</span>
-              <h3 class="feature__title">Collaboration</h3>
-            </header>
-            <div class="feature__text">
-              <p class="feature__text__par">
-                Work with other student athletes to increase visibility. When you share and like other players videos it will increase your visibility as a player. This is the team work aspect aspect to Surface 1.
-              </p>
-            </div>
-          </li>
-          <li class="feature feature__right">
-            <header class="feature__header">
-              <span class="feature__number">03</span>
-              <h3 class="feature__title">Growth</h3>
-            </header>
-            <div class="feature__text">
-              <p class="feature__text__par">
-                Resources for you to get better as a student Athlete. Access to training classes, tutor sessions, etc
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </article>
-    <article class="article__features">
-      <div class="article__container">
-        <h2 class="article__title article__title__left">Players</h2>
-        <div class="players__preview">
-          <picture>
-            <source
-              srcset="https://raw.githubusercontent.com/supernoided/projectS/master/img/basketballer_991.png" media="(min-width: 961px)"
-              srcset="https://raw.githubusercontent.com/supernoided/projectS/master/img/basketballer_436.png" media="(min-width: 641px) and (max-width: 960px)"
-              srcset="https://raw.githubusercontent.com/supernoided/projectS/master/img/basketballer_302.png" media="(max-width: 640px)">
-            <img class="image" src="https://raw.githubusercontent.com/supernoided/projectS/master/img/basketballer_991.png" alt="basketballer">
-          </picture>
-        </div>
-        <ul class="features__list">
-          <li class="feature feature__left">
-            <header class="feature__header">
-              <span class="feature__number">01</span>
-              <h3 class="feature__title">Connection</h3>
-            </header>
-            <div class="feature__text">
-              <p class="feature__text__par">
-                Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1.
-              </p>
-            </div>
-          </li>
-          <li class="feature feature__left">
-            <header class="feature__header">
-              <span class="feature__number">02</span>
-              <h3 class="feature__title">Collaboration</h3>
-            </header>
-            <div class="feature__text">
-              <p class="feature__text__par">
-                Work with recruiter to inrease your chances of finding talented athlete.
-              </p>
-            </div>
-          </li>
-          <li class="feature feature__left">
-            <header class="feature__header">
-              <span class="feature__number">03</span>
-              <h3 class="feature__title">Growth</h3>
-            </header>
-            <div class="feature__text">
-              <p class="feature__text__par">
-                Save your time, recruit proper athlets for your team.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </article>
+  <section class="about">
+    <div class="about__text">
+      <p class="about__par">
+      Our limited SS’20 collection created in collaboration with Hedi Slimane,<br>
+the visionary famous for his youth culture-driven style, closely tied<br>to the music scene
+      </p>
+      <p class="about__par">
+        Available on 04/17 at the <a href="" class="underline about__underline__store">selected stores</a> and <a href="" class="underline about__underline__online">online</a>
+      </p>
+    </div>
   </section>
-  <section class="section__motivation">
-    <article class="article__motivation">
-      <div class="motivation__preview">
+  <section class="preview">
+    <div class="preview__background"></div>
+    <div class="owl-carousel">
+      <div class="slide__hor">
+      <picture>
+        <source
+          srcset="https://supernoided.github.io/img/picture01.png" media="(min-width: 320px)">
+        <img src="https://supernoided.github.io/img/picture01.png"
+          class="car__image"
+          alt="collection image">
+        </picture>
+    </div>
+      <div class="slide__ver">
+        <picture>
+        <source
+        srcset="https://supernoided.github.io/img/picture02.png" media="(min-width: 320px)">
+        <img src="https://supernoided.github.io/img/picture02.png"
+          class="car__image"
+          alt="collection image">
+        </picture>
+    </div>
+      <div class="slide__ver">
+        <picture>
+        <source
+        srcset="https://supernoided.github.io/img/picture03.png" media="(min-width: 320px)">
+        <img src="https://supernoided.github.io/img/picture03.png"
+          class="car__image"
+          alt="collection image">
+        </picture>
+    </div>
+      <div class="slide__ver">
+        <picture>
+        <source
+        srcset="https://supernoided.github.io/img/picture04.png" media="(min-width: 320px)">
+        <img src="https://supernoided.github.io/img/picture04.png"
+          class="car__image"
+          alt="collection image">
+        </picture>
+    </div>
+      <div class="slide__hor">
+        <picture>
+        <source
+        srcset="https://supernoided.github.io/img/picture05.png" media="(min-width: 320px)">
+        <img src="https://supernoided.github.io/img/picture05.png"
+          class="car__image"
+          alt="collection image">
+        </picture>
+    </div>
+      <div class="slide__ver">
+        <picture>
+        <source
+        srcset="https://supernoided.github.io/img/picture06.png" media="(min-width: 320px)">
+        <img src="https://supernoided.github.io/img/picture06.png"
+          class="car__image"
+          alt="collection image">
+        </picture>
+    </div>
+      <div class="slide__ver">
+        <picture>
+        <source
+        srcset="https://supernoided.github.io/img/picture07.png" media="(min-width: 320px)">
+        <img src="https://supernoided.github.io/img/picture07.png"
+          class="car__image"
+          alt="collection image">
+        </picture>
+    </div>
+      <div class="slide__ver">
+        <picture>
+        <source
+        srcset="https://supernoided.github.io/img/picture08.png" media="(min-width: 320px)">
+        <img src="https://supernoided.github.io/img/picture08.png"
+          class="car__image"
+          alt="collection image">
+        </picture>
+    </div>
+    </div>
+  </section>
+  <section class="description">
+    <div class="description__text">
+      <p class="description__par">
+        Discover Rebirth collection, designed with exceptional quality<br>and craftsmanship
+      </p>
+      <p class="description__par">
+        Hedi Slimane and our team reimagined everyday clothing using innovative materials and contemporary shapes
+      </p>
+    </div>
+  </section>
+  <section class="designer">
+    <div class="designer__container">
+      <h2 class="designer__top__title">designed by</h2>
+      <h3 class="designer__sub__title">Hedi Slimane</h3>
+      <p class="designer__par">
+      A photographer and fashion designer. Admired for his work for  Dior Homme, Yves Saint Laurent and Celine
+      </p>
+      <div class="designer__photo__container">
         <picture>
           <source
-              srcset="https://supernoided.github.io/img/be-active_1024.jpg" media="(min-width: 961px)"
-              srcset="https://supernoided.github.io/img/be-active_960.jpg" media="(min-width: 641px) and (max-width: 960px)"
-              srcset="https://supernoided.github.io/img/be-active_640.jpg" media="(max-width: 640px)">
-          <img src="https://supernoided.github.io/img/be-active_1024.jpg"
-               class="image"
-               alt="be-active">
+            srcset="https://supernoided.github.io/img/designer_photo.png" media="(min-width: 601px)"
+            srcset="https://supernoided.github.io/img/designer__mob.png" media="(max-width: 600px)">
+            <img src="https://supernoided.github.io/img/designer_photo.png"
+            class="designer__photo"
+            alt="designer photo">
         </picture>
-          <div class="motivation__number">
-            <span class="number__big">01</span>
-        </div>
       </div>
-      <div class="motivation__container">
-        <h2 class="motivation__title">Be Active</h2>
-        <div class="motivation__text">
-          <p class="motivation__text__par">
-            Post videos with your skills, Like and follow others to be more popular.
-          </p>
+    </div>
+  </section>
+  <section class="subscribe">
+    <h3 class="subscribe__title">join our newsletter</h3>
+    <p class="subscribe__par">
+      Sign up for our newsletter to be the first to know about our new collection and get 5% preorder discount
+    </p>
+    <form class="subscribe__form">
+		  <label>
+        <div>
+				  <input type="email" class="subscribe__form__email" placeholder="Enter your email" name="email" required>
         </div>
+	  	</label>
+		  <button class="subscribe__button">Subscribe</button>
+  	</form>
+  </section>
+  <section class="promo">
+    <h2 class="promo__title">free delivery for all preorders</h2>
+  </section>
+  <section class="collection">
+    <article class="preorder">
+      <div class="collection__pic__container">
+        <a class="collection__pic__link" href="">
+          <picture>
+          <source
+            srcset="https://supernoided.github.io/img/preorder.png" media="(min-width: 601px)"
+            srcset="https://supernoided.github.io/img/preorder__mob.png" media="(max-width: 600px)">
+            <img src="https://supernoided.github.io/img/preorder.png"
+            class="collection__pic"
+            alt="preorder">
+        </picture>
+        </a>
       </div>
+      <button class="preorder__button">Preorder online</button>
     </article>
-    <article class="article__motivation">
-      <div class="motivation__preview">
-        <picture>
+    <article class="stores">
+      <div class="collection__pic__container">
+        <a class="collection__pic__link" href="">
+          <picture>
           <source
-              srcset="https://supernoided.github.io/img/find-contact_1024.jpg" media="(min-width: 961px)"
-              srcset="https://supernoided.github.io/img/find-contact_960.jpg" media="(min-width: 641px) and (max-width: 960px)"
-              srcset="https://supernoided.github.io/img/find-contact_640.jpg" media="(max-width: 640px)">
-          <img src="https://supernoided.github.io/img/find-contact_1024.jpg"
-               class="image"
-               alt="find-contact">
+            srcset="https://supernoided.github.io/img/stores.png" media="(min-width: 601px)"
+            srcset="https://supernoided.github.io/img/stores__mob.png" media="(max-width: 600px)">
+            <img src="https://supernoided.github.io/img/stores.png"
+            class="collection__pic"
+            alt="stores">
         </picture>
-        <div class="motivation__number">
-          <span class="number__big">02</span>
+        </a>
+        <div class="stores__popup">
+          <div class="stores__popup__container">
+            <div class="store__info">
+              <h3 class="store__name">513 broadway</h3>
+              <p class="store__address">New York, NY 10012, US</p>
+              <a class="store__directions" href="">
+                <div class="directions__pic__container">
+                  <svg class="directions__pic" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.93881 7.1069C9.95607 7.06654 10.0133 7.06643 10.0307 7.10673L12.9499 13.8603C12.9678 13.9019 12.9256 13.9441 12.8841 13.926L10.0045 12.6769C9.99179 12.6714 9.9773 12.6714 9.96457 12.677L7.11575 13.9256C7.07424 13.9438 7.03188 13.9018 7.04971 13.8601L9.93881 7.1069Z" fill="#F0F0F0"/>
+<circle cx="10" cy="10" r="9.5" stroke="#F0F0F0"/>
+</svg>
+              </div>
+                <span class="underline underline__directions">get directions</span>
+              </a>
+              <a class="store__phone" href="tel:+16468621831">
+                <div class="phone__pic__container">
+                <svg class="phone__pic" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.5735 11.8425V14.0226C17.5744 14.225 17.5269 14.4253 17.4339 14.6108C17.3409 14.7962 17.2045 14.9627 17.0335 15.0995C16.8625 15.2363 16.6606 15.3405 16.4407 15.4053C16.2209 15.4702 15.9879 15.4943 15.7568 15.476C13.1925 15.2331 10.7293 14.4689 8.56511 13.2451C6.55163 12.1293 4.84455 10.6407 3.5651 8.88482C2.15675 6.989 1.2803 4.83053 1.00676 2.58429C0.985939 2.38333 1.01333 2.18079 1.08718 1.98957C1.16104 1.79835 1.27974 1.62263 1.43574 1.47361C1.59173 1.32458 1.7816 1.20552 1.99326 1.12399C2.20491 1.04246 2.43372 1.00026 2.6651 1.00007H5.16511C5.56953 0.996599 5.9616 1.12149 6.26824 1.35146C6.57488 1.58142 6.77517 1.90078 6.83177 2.25C6.93729 2.94769 7.13298 3.63272 7.41511 4.29204C7.52723 4.55215 7.55149 4.83483 7.48503 5.10659C7.41857 5.37836 7.26416 5.62781 7.04011 5.82539L5.98177 6.74831C7.16807 8.56765 8.89549 10.074 10.9818 11.1085L12.0401 10.1856C12.2667 9.99024 12.5527 9.85559 12.8644 9.79763C13.176 9.73967 13.5002 9.76083 13.7985 9.8586C14.5545 10.1046 15.3401 10.2753 16.1401 10.3673C16.5449 10.4171 16.9146 10.5949 17.1789 10.8669C17.4432 11.1389 17.5836 11.4861 17.5735 11.8425Z" stroke="#F0F0F0" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+              </div>
+                <span class="underline underline__phone">+1 (646)862 1831</span>
+              </a>
+              <a class="store__times" href="">
+                <span class="underline underline__times">opening times</span>
+              </a>
+            </div>
+          </div>
+          <div class="stores__popup__container">
+            <div class="store__info">
+              <h3 class="store__name">240 regent street</h3>
+              <p class="store__address">London, W1B 3BR, UK</p>
+              <a class="store__directions" href="">
+                <div class="directions__pic__container">
+                  <svg class="directions__pic" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.93881 7.1069C9.95607 7.06654 10.0133 7.06643 10.0307 7.10673L12.9499 13.8603C12.9678 13.9019 12.9256 13.9441 12.8841 13.926L10.0045 12.6769C9.99179 12.6714 9.9773 12.6714 9.96457 12.677L7.11575 13.9256C7.07424 13.9438 7.03188 13.9018 7.04971 13.8601L9.93881 7.1069Z" fill="#F0F0F0"/>
+<circle cx="10" cy="10" r="9.5" stroke="#F0F0F0"/>
+</svg>
+              </div>
+                <span class="underline underline__directions">get directions</span>
+              </a>
+              <a class="store__phone" href="tel:+4402072922539">
+                <div class="phone__pic__container">
+                  <svg class="phone__pic" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.5735 11.8425V14.0226C17.5744 14.225 17.5269 14.4253 17.4339 14.6108C17.3409 14.7962 17.2045 14.9627 17.0335 15.0995C16.8625 15.2363 16.6606 15.3405 16.4407 15.4053C16.2209 15.4702 15.9879 15.4943 15.7568 15.476C13.1925 15.2331 10.7293 14.4689 8.56511 13.2451C6.55163 12.1293 4.84455 10.6407 3.5651 8.88482C2.15675 6.989 1.2803 4.83053 1.00676 2.58429C0.985939 2.38333 1.01333 2.18079 1.08718 1.98957C1.16104 1.79835 1.27974 1.62263 1.43574 1.47361C1.59173 1.32458 1.7816 1.20552 1.99326 1.12399C2.20491 1.04246 2.43372 1.00026 2.6651 1.00007H5.16511C5.56953 0.996599 5.9616 1.12149 6.26824 1.35146C6.57488 1.58142 6.77517 1.90078 6.83177 2.25C6.93729 2.94769 7.13298 3.63272 7.41511 4.29204C7.52723 4.55215 7.55149 4.83483 7.48503 5.10659C7.41857 5.37836 7.26416 5.62781 7.04011 5.82539L5.98177 6.74831C7.16807 8.56765 8.89549 10.074 10.9818 11.1085L12.0401 10.1856C12.2667 9.99024 12.5527 9.85559 12.8644 9.79763C13.176 9.73967 13.5002 9.76083 13.7985 9.8586C14.5545 10.1046 15.3401 10.2753 16.1401 10.3673C16.5449 10.4171 16.9146 10.5949 17.1789 10.8669C17.4432 11.1389 17.5836 11.4861 17.5735 11.8425Z" stroke="#F0F0F0" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+              </div>
+                <span class="underline underline__phone">+44 (0)207 292 2539</span>
+              </a>
+              <a class="store__times" href="">
+                <span class="underline underline__times">opening times</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="motivation__container">
-        <h2 class="motivation__title">Find Contact</h2>
-        <div class="motivation__text">
-          <p class="motivation__text__par">
-            Contact others to find right coach or athlete you are looking for.
-          </p>
-        </div>
-      </div>
+      <a class="stores__link" href="">
+        <span class="underline stores__underline">Available stores</span>
+      </a>
     </article>
-    <article class="article__motivation">
-      <div class="motivation__preview">
-        <picture>
-          <source
-              srcset="https://supernoided.github.io/img/work-it_1024.jpg" media="(min-width: 961px)"
-              srcset="https://supernoided.github.io/img/work-it_960.jpg" media="(min-width: 641px) and (max-width: 960px)"
-              srcset="https://supernoided.github.io/img/work-it_640.jpg" media="(max-width: 640px)">
-          <img src="https://supernoided.github.io/img/work-it_1024.jpg"
-               class="image"
-               alt="work-it">
-        </picture>
-        <div class="motivation__number">
-          <span class="number__big">02</span>
-        </div>
-      </div>
-      <div class="motivation__container">
-        <h2 class="motivation__title">Work It</h2>
-        <div class="motivation__text">
-          <p class="motivation__text__par">
-            Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make this enjoyable expirience.
-          </p>
-        </div>
-      </div>
-    </article>  
   </section>
 </main>
 <footer class="footer">
-  <header class="footer__header">
-    <div class="icon__download">
-      <svg class="logo__img" viewBox="0 0 288 264" xmlns="http://www.w3.org/2000/svg">
-        <g fill-rule="evenodd">
-	        <path d="M115.5 36.848v190.304L253.03 132 115.5 36.848zM282.112 142.28l-172 119c-8.29 5.736-19.612-.198-19.612-10.28V13c0-10.082 11.321-16.016 19.612-10.28l172 119c7.184 4.97 7.184 15.59 0 20.56z" fill-rule="nonzero"/>
-          <path d="M42.5 107h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zm0 70h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zM8 143h168a8 8 0 1 0 0-16H8a8 8 0 1 0 0 16z" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"/>
-        </g>
+  <div class="footer__flex">
+    <div class="footer__info">
+      <a class="logo__link logo__link__footer" href="">
+        <div class="logo__footer">
+          <svg viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="26.5487" cy="29.6832" r="18.8256" stroke="#353535"/>
+<path d="M10.4835 8.31379C10.4835 8.31379 26.8788 62.8851 30.5848 28.4151C34.2908 -6.05486 30.5093 53.1046 50.6862 48.5165" stroke="#353535" stroke-width="2"/>
+        </svg>
+      </div>
+        <span class="text__hidden">to main page</span>
+        <span class="logo__text logo__text__footer">UTH x HEDI SLIMANE</span>
+      </a>
+      <p class="footer__par">
+        Rebirth SS’2020<br>
+Available on 04/17 at the selected stores and online
+      </p>
+      <div class="social">
+        <a class="social__instagram" href="">
+          <div class="instagram__pic">
+            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M32 0H4C1.8 0 0 1.8 0 4V32C0 34.202 1.8 36 4 36H32C34.2 36 36 34.202 36 32V4C36 1.8 34.2 0 32 0ZM17.968 29.046C20.9057 29.0455 23.7229 27.8781 25.8 25.8006C27.8771 23.7232 29.044 20.9057 29.044 17.968C29.044 17.292 28.958 16.64 28.838 16H32V30.432C32 30.6137 31.9641 30.7937 31.8944 30.9615C31.8247 31.1293 31.7225 31.2817 31.5937 31.4099C31.4649 31.5382 31.3121 31.6397 31.1439 31.7087C30.9758 31.7777 30.7957 31.8128 30.614 31.812H5.386C5.20427 31.8128 5.02418 31.7777 4.85605 31.7087C4.68793 31.6397 4.53509 31.5382 4.40631 31.4099C4.27753 31.2817 4.17534 31.1293 4.10562 30.9615C4.03589 30.7937 4 30.6137 4 30.432V16H7.098C6.976 16.64 6.89 17.292 6.89 17.968C6.89053 20.9059 8.05784 23.7233 10.1353 25.8007C12.2127 27.8782 15.0301 29.0455 17.968 29.046ZM11.046 17.968C11.046 17.059 11.225 16.1589 11.5729 15.3191C11.9208 14.4792 12.4306 13.7162 13.0734 13.0734C13.7162 12.4306 14.4792 11.9208 15.3191 11.5729C16.1589 11.225 17.059 11.046 17.968 11.046C18.877 11.046 19.7771 11.225 20.6169 11.5729C21.4567 11.9208 22.2198 12.4306 22.8626 13.0734C23.5054 13.7162 24.0152 14.4792 24.3631 15.3191C24.711 16.1589 24.89 17.059 24.89 17.968C24.89 19.8038 24.1607 21.5645 22.8626 22.8626C21.5645 24.1607 19.8038 24.89 17.968 24.89C16.1322 24.89 14.3715 24.1607 13.0734 22.8626C11.7753 21.5645 11.046 19.8038 11.046 17.968ZM30.614 10H27.384C27.0173 9.99894 26.6659 9.85279 26.4065 9.59347C26.1472 9.33415 26.0011 8.98274 26 8.616V5.382C26 4.618 26.62 4 27.382 4H30.612C31.38 4 32 4.618 32 5.382V8.614C32 9.376 31.38 10 30.614 10Z" fill="#242A36"/>
+</svg>
+          </div>
+        </a>
+        <a class="social__facebook" href="">
+          <div class="facebook__pic">
+            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M36 3.168V32.832C36 33.696 35.688 34.44 35.064 35.064C34.44 35.688 33.696 36 32.832 36H3.168C2.304 36 1.56 35.688 0.936 35.064C0.312 34.44 0 33.696 0 32.832V3.168C0 2.304 0.312 1.56 0.936 0.936C1.56 0.312 2.304 0 3.168 0H32.832C33.696 0 34.44 0.312 35.064 0.936C35.688 1.56 36 2.304 36 3.168ZM29.268 8.928L29.988 4.68C28.956 4.32 27.24 4.14 24.84 4.14C22.944 4.14 21.468 4.836 20.412 6.228C19.788 7.044 19.476 8.472 19.476 10.512V13.32H16.632V17.46H19.476V31.86H24.84V17.46H29.088L29.412 13.32H24.84V10.08C24.84 9.072 25.548 8.568 26.964 8.568C27.708 8.568 28.476 8.688 29.268 8.928Z" fill="#242A36"/>
+</svg>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="footer__pic__container">
+      <picture>
+      <source
+        srcset="https://supernoided.github.io/img/footer__pic.png" media="(min-width: 601px)">
+      <img src="https://supernoided.github.io/img/footer__pic.png"
+        class="footer__pic"
+        alt="footer picture">
+      </picture>
+    </div>
+  </div>
+  <div class="footer__sub">
+    <a class="footer__sub__logo__link" href="">
+        <div class="footer__sub__logo">
+          <svg viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="26.5487" cy="29.6832" r="18.8256" stroke="#353535"/>
+<path d="M10.4835 8.31379C10.4835 8.31379 26.8788 62.8851 30.5848 28.4151C34.2908 -6.05486 30.5093 53.1046 50.6862 48.5165" stroke="#353535" stroke-width="2"/>
       </svg>
-    </div>
-    <div class="footer__title__container">
-      <h2 class="footer__title__top">Download app</h2>
-      <h3 class="footer__title__sub">Show everyone what you can do!</h3>
-    </div>
-  </header>
-  <div class="button__padding">
-    <div class="button__container button__footer">
-      <label class="label">
-        <span class="text__hidden">Download on the AppStore</span>
-        <button class="button">
-          <svg class="logo__store" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170">
-            <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.197-2.12-9.973-3.17-14.34-3.17-4.58 0-9.492 1.05-14.746 3.17-5.262 2.13-9.5 3.24-12.742 3.35-4.93.21-9.842-1.96-14.746-6.52-3.13-2.73-7.045-7.41-11.735-14.04-5.03-7.08-9.168-15.29-12.41-24.65-3.47-10.11-5.21-19.9-5.21-29.378 0-10.857 2.346-20.22 7.045-28.068C27.508 57.03 32.42 52.06 38.57 48.41s12.793-5.51 19.948-5.63c3.915 0 9.05 1.21 15.43 3.59 6.36 2.39 10.446 3.6 12.237 3.6 1.34 0 5.877-1.416 13.57-4.24 7.275-2.617 13.415-3.7 18.445-3.274 13.63 1.1 23.87 6.473 30.68 16.153-12.19 7.385-18.22 17.73-18.1 31 .11 10.338 3.86 18.94 11.23 25.77 3.34 3.17 7.07 5.62 11.22 7.36-.9 2.61-1.85 5.11-2.86 7.51zM119.11 7.24c0 8.102-2.96 15.667-8.86 22.67-7.12 8.323-15.732 13.133-25.07 12.374-.12-.972-.19-1.995-.19-3.07 0-7.778 3.387-16.102 9.4-22.908 3.002-3.446 6.82-6.31 11.45-8.597 4.62-2.253 8.99-3.498 13.1-3.71.12 1.082.17 2.165.17 3.24z"/>
-          </svg>
-          <div class="button__text">
-            <p>Download on the</p>
-            <p class="button__text__storename">App Store</p>
-          </div>
-        </button>
-      </label>
-      <label class="label">
-        <span class="text__hidden">Download on the Google Play</span>
-        <button class="button">
-          <svg class="logo__store" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 505.499 505.499">
-            <path d="M471.497 234.466l-92.082-53.135-75.733 73.208 69.215 66.907 98.6-56.91c5.43-3.133 8.677-8.756 8.677-15.03 0-6.275-3.245-11.898-8.677-15.04zM363.785 172.3l-101.332-58.497L40.375 0l250.828 242.47M44.063 505.5l218.77-120.512 94.435-54.515-66.065-63.87M25.56 9.815l-.236 489.67L278.72 254.534"/>
-          </svg>
-          <div class="button__text">
-            <p>Get it on</p>
-            <p class="button__text__storename">Google Play</p>
-          </div>
-        </button>
-      </label>
-    </div>
+        </div>
+        <span class="text__hidden">to main page</span>
+        <span class="underline footer__sub__underline">Go to UTH.COM</span>
+      </a>
+    <p class="copyright">
+        copyright Uth co, all rights reserved
+    </p>
   </div>
-  <div class="logo logo__footer">
-    <a class="logo__link" href="https://supernoided.github.io/">
-      <span class="text__hidden">to main page</span>
-      <svg class="svg" viewBox="0 0 972 264" xmlns="http://www.w3.org/2000/svg">
-        <g fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M115.5 36.848v190.304L253.03 132 115.5 36.848zM282.112 142.28l-172 119c-8.29 5.736-19.612-.198-19.612-10.28V13c0-10.082 11.321-16.016 19.612-10.28l172 119c7.184 4.97 7.184 15.59 0 20.56z"/>
-          <path d="M42.5 107h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zm0 70h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zM8 143h168a8 8 0 1 0 0-16H8a8 8 0 1 0 0 16z"/>
-          <path d="M356.505 184.362c-7.63 0-14.335-.772-20.117-2.316-5.782-1.544-10.202-3.436-13.26-5.676-3.057-2.24-4.586-4.36-4.586-6.357 0-1.575.59-3.512 1.77-5.813 1.182-2.3 2.59-4.283 4.224-5.95 1.635-1.664 2.997-2.496 4.087-2.496.666 0 2.09.575 4.27 1.725 3.268 1.695 6.37 3.057 9.308 4.086 2.937 1.03 6.313 1.544 10.127 1.544 4.238 0 7.826-.832 10.762-2.497 2.936-1.665 4.404-4.587 4.404-8.764 0-2.423-.757-4.512-2.27-6.268-1.514-1.756-3.452-3.24-5.813-4.45-2.36-1.21-5.57-2.634-9.626-4.27l-7.175-3.087c-4.36-2.12-8.1-4.45-11.217-6.993-3.118-2.543-5.66-5.903-7.63-10.08-1.967-4.18-2.95-9.295-2.95-15.35 0-7.386 1.816-13.532 5.45-18.436 3.632-4.904 8.354-8.507 14.167-10.808 5.812-2.3 12.048-3.45 18.71-3.45 5.448 0 10.382.56 14.802 1.68 4.42 1.12 7.887 2.557 10.4 4.313 2.512 1.757 3.768 3.513 3.768 5.27 0 1.452-.47 3.314-1.407 5.584-.94 2.27-2.104 4.254-3.497 5.95-1.393 1.694-2.694 2.542-3.905 2.542-.544 0-1.513-.303-2.905-.908a51.939 51.939 0 0 0-6.767-2.225c-2.27-.575-5.04-.863-8.31-.863-5.63 0-9.536.893-11.715 2.68-2.18 1.785-3.27 3.89-3.27 6.31 0 2.786.742 5.117 2.225 6.994 1.484 1.877 3.36 3.42 5.63 4.632 2.27 1.21 5.435 2.604 9.492 4.178 6.115 2.603 11.11 5.07 14.985 7.402 3.875 2.33 7.22 5.676 10.036 10.035 2.816 4.36 4.224 9.93 4.224 16.712 0 8.295-1.74 15.092-5.222 20.39-3.482 5.297-7.962 9.127-13.442 11.488-5.48 2.362-11.398 3.542-17.755 3.542h-.002zm96.724 0c-9.81 0-18.21-1.544-25.204-4.632-6.993-3.087-12.337-7.553-16.03-13.396-3.693-5.842-5.54-12.88-5.54-21.115V74.832c0-1.756.787-3.073 2.36-3.95 1.576-.88 4.028-1.318 7.358-1.318h5.45c3.33 0 5.766.44 7.31 1.317 1.544.878 2.316 2.195 2.316 3.95v68.752c0 3.754.923 7.114 2.77 10.08 1.847 2.968 4.435 5.284 7.765 6.95 3.33 1.664 7.145 2.496 11.444 2.496 4.297 0 8.127-.832 11.487-2.497 3.36-1.665 5.98-3.98 7.856-6.948 1.877-2.967 2.816-6.327 2.816-10.08V74.832c0-1.756.77-3.073 2.315-3.95 1.544-.88 3.98-1.318 7.31-1.318h5.36c3.33 0 5.766.44 7.31 1.317 1.544.878 2.316 2.195 2.316 3.95v70.387c0 8.233-1.846 15.272-5.54 21.114-3.692 5.843-9.036 10.31-16.03 13.396-6.992 3.088-15.393 4.632-25.2 4.632l.001.002zm78.376-1.09c-6.478 0-9.717-1.695-9.717-5.085V76.377c0-2.24.513-3.86 1.543-4.86 1.03-.998 2.664-1.497 4.904-1.497h31.515c26.76 0 40.142 10.08 40.142 30.243 0 6.115-1.71 11.382-5.13 15.802-3.422 4.42-8.01 7.72-13.76 9.9v.636c1.998.848 4.102 2.665 6.312 5.45s3.98 5.933 5.313 9.445l14.257 35.51c.485 1.454.727 2.483.727 3.09 0 2.118-3.21 3.177-9.627 3.177h-6.63c-5.39 0-8.507-1.12-9.354-3.36l-12.806-31.515c-1.21-2.42-2.377-4.298-3.497-5.63-1.12-1.332-2.68-2.347-4.677-3.043-1.998-.696-4.692-1.044-8.083-1.044h-6.267v39.507c0 3.39-3.24 5.085-9.717 5.085h-5.45l.002-.001zm30.425-66.026c2.18 0 4.24-.62 6.177-1.862 1.938-1.24 3.48-2.92 4.632-5.04 1.15-2.12 1.724-4.45 1.724-6.993 0-3.753-1.226-6.735-3.678-8.945s-5.767-3.315-9.945-3.315h-14.167v26.156h15.258l-.001-.001zm68.116 66.026c-6.478 0-9.717-1.695-9.717-5.085V76.377c0-2.24.513-3.86 1.543-4.86 1.03-.998 2.664-1.497 4.904-1.497h53.947c1.696 0 2.922.635 3.678 1.907.757 1.27 1.136 3.33 1.136 6.176v4.904c0 2.846-.38 4.904-1.136 6.176-.756 1.27-1.982 1.907-3.678 1.907h-35.51v23.613h34.33c1.695 0 2.936.636 3.723 1.907.787 1.272 1.18 3.3 1.18 6.085v4.995c0 2.846-.393 4.92-1.18 6.222-.787 1.3-2.028 1.952-3.723 1.952h-34.33v42.323c0 3.39-3.24 5.085-9.718 5.085h-5.45.001zm70.205 0c-6.6 0-9.9-1.18-9.9-3.542 0-.666.213-1.634.637-2.906l35.6-103.807c.85-2.3 3.907-3.452 9.174-3.452h8.357c5.267 0 8.325 1.15 9.173 3.452l35.6 103.807c.304 1.21.455 2.18.455 2.906 0 1.21-.65 2.104-1.952 2.68-1.302.575-3.346.862-6.13.862h-7.085c-2.543 0-4.586-.257-6.13-.772-1.544-.514-2.498-1.377-2.86-2.588l-6.54-19.708h-38.054l-6.54 19.708c-.665 2.24-3.147 3.36-7.446 3.36h-6.359zm51.496-44.41l-9.173-28.7c-.545-1.453-1.014-3.118-1.408-4.995a182.088 182.088 0 0 1-1.044-5.358h-.635l-.363 1.997c-.606 3.572-1.302 6.357-2.09 8.355l-9.535 28.7h24.25l-.002.001zm97.995 45.5c-18.163 0-31.56-4.722-40.187-14.168-8.628-9.445-12.942-24.127-12.942-44.048 0-38.326 17.983-57.49 53.948-57.49 4.905 0 9.99.486 15.258 1.454 5.268.97 9.672 2.316 13.214 4.042 3.542 1.725 5.313 3.648 5.313 5.767 0 1.513-.605 3.496-1.816 5.948-1.21 2.452-2.65 4.616-4.314 6.493-1.665 1.878-3.133 2.817-4.405 2.817-.303 0-1.12-.303-2.452-.908a67.092 67.092 0 0 0-9.127-3.044c-3.18-.817-7.222-1.226-12.126-1.226-9.506 0-16.544 3.012-21.116 9.037-4.57 6.024-6.857 15.12-6.857 27.29s2.302 21.344 6.904 27.52c4.6 6.175 11.504 9.263 20.707 9.263 4.784 0 8.947-.484 12.49-1.453 3.54-.97 7.007-2.21 10.398-3.723.18-.06.726-.288 1.634-.682.91-.393 1.575-.59 1.998-.59 1.575 0 3.088.923 4.54 2.77 1.454 1.847 2.635 3.936 3.543 6.267.91 2.33 1.363 4.01 1.363 5.04 0 2.966-1.983 5.48-5.95 7.537-3.965 2.06-8.748 3.588-14.35 4.587-5.6 1-10.82 1.498-15.665 1.498l-.003.002zM907.06 183c-2.24 0-3.875-.515-4.905-1.544-1.03-1.03-1.544-2.664-1.544-4.904V76.377c0-2.24.514-3.86 1.543-4.86 1.03-.998 2.664-1.497 4.905-1.497h59.124c1.695 0 2.92.635 3.678 1.907.757 1.27 1.135 3.33 1.135 6.176v4.904c0 2.846-.378 4.904-1.135 6.176-.757 1.27-1.983 1.907-3.678 1.907h-40.688v23.43h36.328c1.696 0 2.922.637 3.678 1.91.757 1.27 1.136 3.33 1.136 6.174v4.996c0 2.845-.38 4.904-1.136 6.175-.756 1.272-1.982 1.908-3.678 1.908h-36.328v26.156h40.778c1.696 0 2.922.635 3.68 1.906.756 1.272 1.134 3.3 1.134 6.085v5.087c0 2.846-.378 4.904-1.135 6.176-.756 1.27-1.982 1.907-3.678 1.907H907.06z" fill-rule="nonzero"/>
-        </g>
-    </svg>
-    </a>  
-  </div>
-</footer>
+</footer>    
 </body>
 </html>
