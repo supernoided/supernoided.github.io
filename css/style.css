@@ -1250,12 +1250,16 @@ a {
   height: 1px;
   bottom: -1px;
   left: 0;
-  background-color: #3E3E3E;
 }
 
 .about__underline__store,
 .about__underline__online {
   color: #3E3E3E;
+}
+
+.about__underline__store::after,
+.about__underline__online::after {
+  background-color: #3E3E3E;
 }
 
 .about__underline__store:hover,
@@ -1336,11 +1340,11 @@ a {
 }
 
  .owl-dot.active:before {
-	 content: counter(slides-num) " /";
-	 display: inline-block;
-	 position: absolute;
-	 left: 0;
-	 top: 0;
+   content: counter(slides-num) " /";
+   display: inline-block;
+   position: absolute;
+   left: 0;
+   top: 0;
    font-family: sunflower-light;
    font-style: normal;
    font-weight: 300;
