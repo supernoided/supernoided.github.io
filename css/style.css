@@ -1282,8 +1282,8 @@ a {
   background-color: #C5C3BB;
 }
 
-.owl-carousel.owl-grab {
-  cursor: cursor: url("https://supernoided.github.io/svg/cursor__active.svg"), grab;
+.grabbing {
+  cursor: url("https://supernoided.github.io/svg/cursor__active.svg"), grab;
 }
 
 .owl-stage {
