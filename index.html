@@ -7,12 +7,13 @@
 </head>	
 <body>
 <header class="header__top">
-  <div class="logo__fixed">
-    <svg viewBox="0 0 134 134" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="60.0241" cy="67.4316" r="45.1786" stroke="#F5F5F5"/>
-<path d="M22.052 16.9235C22.052 16.9235 60.8046 145.91 69.5642 64.4357C78.3239 -17.0388 69.3857 122.793 117.076 111.948" stroke="#F5F5F5" stroke-width="2"/>
+  <a class="logo__fixed__link" href="">
+    <span class="text__hidden">to main page</span>
+    <svg class="logo__fixed__svg" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="26.5487" cy="29.6832" r="18.8256"/>
+<path d="M10.4835 8.31379C10.4835 8.31379 26.8788 62.8851 30.5848 28.4151C34.2908 -6.05486 30.5093 53.1046 50.6862 48.5165" stroke-width="1.5"/>
     </svg>
-  </div>
+  </a>
   <div class="start__fixed">
     <div class="start__left">
     <a class="link logo__link" href="">
@@ -44,8 +45,8 @@
   <section class="about">
     <div class="about__text">
       <p class="about__par">
-      Our limited SS’20 collection created in collaboration with Hedi Slimane,<br>
-the visionary famous for his youth culture-driven style, closely tied<br>to the music scene
+      Our limited SS’20 collection created in collaboration with Hedi Slimane,
+the visionary famous for his youth culture-driven style, closely tied to the music scene
       </p>
       <p class="about__par">
         Available on 04/17 at the <a href="" class="underline about__underline__store">selected stores</a> and <a href="" class="underline about__underline__online">online</a>
@@ -132,7 +133,7 @@ the visionary famous for his youth culture-driven style, closely tied<br>to the 
   <section class="description">
     <div class="description__text">
       <p class="description__par">
-        Discover Rebirth collection, designed with exceptional quality<br>and craftsmanship
+        Discover Rebirth collection, designed with exceptional quality and craftsmanship
       </p>
       <p class="description__par">
         Hedi Slimane and our team reimagined everyday clothing using innovative materials and contemporary shapes
@@ -165,9 +166,7 @@ the visionary famous for his youth culture-driven style, closely tied<br>to the 
     </p>
     <form class="subscribe__form">
 		  <label>
-        <div>
-				  <input type="email" class="subscribe__form__email" placeholder="Enter your email" name="email" required>
-        </div>
+				<input type="email" class="subscribe__form__email" placeholder="Enter your email" name="email" required>
 	  	</label>
 		  <button class="subscribe__button">Subscribe</button>
   	</form>
@@ -187,9 +186,12 @@ the visionary famous for his youth culture-driven style, closely tied<br>to the 
             class="collection__pic"
             alt="preorder">
         </picture>
+          <span class="text__hidden">preorder collection</span>
         </a>
       </div>
-      <button class="preorder__button">Preorder online</button>
+      <form action="">
+        <button class="preorder__button" type="submit">Preorder online</button>
+      </form>
     </article>
     <article class="stores">
       <div class="collection__pic__container">
@@ -202,6 +204,7 @@ the visionary famous for his youth culture-driven style, closely tied<br>to the 
             class="collection__pic"
             alt="stores">
         </picture>
+          <span class="text__hidden">to stores page</span>
         </a>
         <div class="stores__popup">
           <div class="stores__popup__container">
@@ -260,9 +263,11 @@ the visionary famous for his youth culture-driven style, closely tied<br>to the 
           </div>
         </div>
       </div>
-      <a class="stores__link" href="">
+      <form class="stores__button__form" action="">
+        <button class="stores__link" type="submit" value="Go to stores page">
         <span class="underline stores__underline">Available stores</span>
-      </a>
+      </button>
+      </form>
     </article>
   </section>
 </main>
@@ -279,12 +284,17 @@ the visionary famous for his youth culture-driven style, closely tied<br>to the 
         <span class="text__hidden">to main page</span>
         <span class="logo__text logo__text__footer">UTH x HEDI SLIMANE</span>
       </a>
-      <p class="footer__par">
-        Rebirth SS’2020<br>
-Available on 04/17 at the selected stores and online
+      <div class="footer__text">
+        <p class="footer__par">
+        Rebirth SS’2020
       </p>
+        <p class="footer__par">
+        Available on 04/17 at the selected stores and online
+      </p>
+      </div>
       <div class="social">
         <a class="social__instagram" href="">
+          <span class="text__hidden">to main page</span>
           <div class="instagram__pic">
             <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M32 0H4C1.8 0 0 1.8 0 4V32C0 34.202 1.8 36 4 36H32C34.2 36 36 34.202 36 32V4C36 1.8 34.2 0 32 0ZM17.968 29.046C20.9057 29.0455 23.7229 27.8781 25.8 25.8006C27.8771 23.7232 29.044 20.9057 29.044 17.968C29.044 17.292 28.958 16.64 28.838 16H32V30.432C32 30.6137 31.9641 30.7937 31.8944 30.9615C31.8247 31.1293 31.7225 31.2817 31.5937 31.4099C31.4649 31.5382 31.3121 31.6397 31.1439 31.7087C30.9758 31.7777 30.7957 31.8128 30.614 31.812H5.386C5.20427 31.8128 5.02418 31.7777 4.85605 31.7087C4.68793 31.6397 4.53509 31.5382 4.40631 31.4099C4.27753 31.2817 4.17534 31.1293 4.10562 30.9615C4.03589 30.7937 4 30.6137 4 30.432V16H7.098C6.976 16.64 6.89 17.292 6.89 17.968C6.89053 20.9059 8.05784 23.7233 10.1353 25.8007C12.2127 27.8782 15.0301 29.0455 17.968 29.046ZM11.046 17.968C11.046 17.059 11.225 16.1589 11.5729 15.3191C11.9208 14.4792 12.4306 13.7162 13.0734 13.0734C13.7162 12.4306 14.4792 11.9208 15.3191 11.5729C16.1589 11.225 17.059 11.046 17.968 11.046C18.877 11.046 19.7771 11.225 20.6169 11.5729C21.4567 11.9208 22.2198 12.4306 22.8626 13.0734C23.5054 13.7162 24.0152 14.4792 24.3631 15.3191C24.711 16.1589 24.89 17.059 24.89 17.968C24.89 19.8038 24.1607 21.5645 22.8626 22.8626C21.5645 24.1607 19.8038 24.89 17.968 24.89C16.1322 24.89 14.3715 24.1607 13.0734 22.8626C11.7753 21.5645 11.046 19.8038 11.046 17.968ZM30.614 10H27.384C27.0173 9.99894 26.6659 9.85279 26.4065 9.59347C26.1472 9.33415 26.0011 8.98274 26 8.616V5.382C26 4.618 26.62 4 27.382 4H30.612C31.38 4 32 4.618 32 5.382V8.614C32 9.376 31.38 10 30.614 10Z" fill="#242A36"/>
@@ -292,6 +302,7 @@ Available on 04/17 at the selected stores and online
           </div>
         </a>
         <a class="social__facebook" href="">
+          <span class="text__hidden">to main page</span>
           <div class="facebook__pic">
             <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M36 3.168V32.832C36 33.696 35.688 34.44 35.064 35.064C34.44 35.688 33.696 36 32.832 36H3.168C2.304 36 1.56 35.688 0.936 35.064C0.312 34.44 0 33.696 0 32.832V3.168C0 2.304 0.312 1.56 0.936 0.936C1.56 0.312 2.304 0 3.168 0H32.832C33.696 0 34.44 0.312 35.064 0.936C35.688 1.56 36 2.304 36 3.168ZM29.268 8.928L29.988 4.68C28.956 4.32 27.24 4.14 24.84 4.14C22.944 4.14 21.468 4.836 20.412 6.228C19.788 7.044 19.476 8.472 19.476 10.512V13.32H16.632V17.46H19.476V31.86H24.84V17.46H29.088L29.412 13.32H24.84V10.08C24.84 9.072 25.548 8.568 26.964 8.568C27.708 8.568 28.476 8.688 29.268 8.928Z" fill="#242A36"/>
@@ -325,7 +336,7 @@ Available on 04/17 at the selected stores and online
         copyright Uth co, all rights reserved
     </p>
   </div>
-</footer>    
+</footer>     
 </body>
 <footer>
   <script src="https://supernoided.github.io/js/jquery.min.js" type="text/javascript"></script>
