@@ -29,7 +29,7 @@
 @media (min-width: 901px) {
   .logo__fixed__link {
     position: fixed;
-    z-index: 3;
+    z-index: 10;
     top: 1.04%;
     left: 1.04%;
     width: 8vw;
