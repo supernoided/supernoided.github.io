@@ -29,7 +29,7 @@
 @media (min-width: 901px) {
   .logo__fixed__link {
     position: fixed;
-    z-index: 10;
+    z-index: 3;
     top: 1.04%;
     left: 1.04%;
     width: 8vw;
@@ -91,8 +91,8 @@
     margin-top: 1.527%;
   }
   
-  .preview__background { 
-    height: 41.02vw;
+  .preview::after {
+    height: 41.041vw;
   }
   
   .slide__hor {
@@ -134,16 +134,16 @@
   }
 
   .owl-dots:after {
-    font-size: 1.388vw;
+	   font-size: 1.388vw;
   }
 
   .owl-dot {
-    margin-right: 0.277vw;
+	   margin-right: 0.277vw;
   }
   
   .owl-dot.active:before {
-    font-size: 1.388vw;
-    margin-left: 0.208vw;
+	   font-size: 1.388vw;
+     margin-left: 0.208vw;
   }
   
   .description {
@@ -524,7 +524,7 @@
     margin-top: 2.444%;
   }
   
-  .preview__background { 
+  .preview::after { 
     height: 81.5%;
   }
   
@@ -855,7 +855,7 @@
     margin-top: 5.866%;
   }
   
-  .preview__background { 
+  .preview::after { 
     height: 41.041vw;
   }
   
@@ -1077,11 +1077,14 @@
     width: 9.333vw;
     height: 9.333vw;
   }
+  
+  .footer__text {
+    max-width: 88%;
+  }
 
   .footer__par {
     margin-top: 11.2vw;
     font-size: 4.8vw;
-    max-width: 88%;
   }
 
   .social {
@@ -1285,9 +1288,12 @@ a {
   cursor: url("https://supernoided.github.io/img/cursor__active.png"), grab;
 }
 
-.preview__background {
+.preview::after {
+  content: "";
+  top: 0;
+  left: 0;
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   width: 100%;
   background-color: #C5C3BB;
 }
