@@ -855,6 +855,16 @@
     margin-top: 5.866%;
   }
   
+  .about__underline__store,
+  .about__underline__online {
+    text-decoration: underline;
+  }
+  
+  .about__underline__store::after,
+  .about__underline__online::after {
+    opacity: 0;
+  }
+  
   .preview::after { 
     height: 41.041vw;
   }
